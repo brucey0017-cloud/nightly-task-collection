@@ -79,15 +79,44 @@ def ensure_dir(path: Path, dry_run: bool, stats: Stats) -> None:
 
 
 def sync_tree(src_root: Path, dst_root: Path, dry_run: bool, stats: Stats) -> None:
-    if not src_root.exists():
+    try:
+        exists = src_root.exists()
+    except PermissionError:
+        print(f"[WARN] Source not accessible (permission denied), skip: {src_root}")
+        stats.sources_missing += 1
+        return
+
+    if not exists:
         print(f"[WARN] Source missing, skip: {src_root}")
+        stats.sources_missing += 1
+        return
+
+    try:
+        is_dir = src_root.is_dir()
+        # preflight access check
+        _ = next(src_root.iterdir(), None)
+    except PermissionError:
+        print(f"[WARN] Source not accessible (permission denied), skip: {src_root}")
+        stats.sources_missing += 1
+        return
+
+    if not is_dir:
+        print(f"[WARN] Source is not a directory, skip: {src_root}")
         stats.sources_missing += 1
         return
 
     ensure_dir(dst_root, dry_run, stats)
 
+    try:
+        source_dirs = sorted([p for p in src_root.rglob("*") if p.is_dir()])
+        source_files = sorted([p for p in src_root.rglob("*") if p.is_file()])
+    except PermissionError:
+        print(f"[WARN] Source traversal denied, skip: {src_root}")
+        stats.sources_missing += 1
+        return
+
     # Ensure source directories exist in destination (including empty dirs)
-    for src_dir in sorted([p for p in src_root.rglob("*") if p.is_dir()]):
+    for src_dir in source_dirs:
         if should_ignore(src_dir):
             stats.files_ignored += 1
             continue
@@ -96,7 +125,7 @@ def sync_tree(src_root: Path, dst_root: Path, dry_run: bool, stats: Stats) -> No
         ensure_dir(dst_dir, dry_run, stats)
 
     # Copy new/changed files
-    for src_file in sorted([p for p in src_root.rglob("*") if p.is_file()]):
+    for src_file in source_files:
         if any(should_ignore(part) for part in [src_file, *src_file.parents]):
             stats.files_ignored += 1
             continue
