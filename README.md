@@ -5,7 +5,7 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-04`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`20`
+- 功能页数量：`18`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-04
@@ -15,7 +15,6 @@
 - [status-jsonl-inspector](docs/features/2026-04-04-main-status-jsonl-inspector.md)  `[监控观测属性]`
 - [status-digest (maker sidequest)](docs/features/2026-04-04-maker-status-digest.md)  `[监控观测属性]`
 - [Sidequest Report](docs/features/2026-04-04-report.md)  `[监控观测属性]`
-- [Vibe Brand Voice Guardian](docs/features/2026-04-04-vibe-brand-voice-guardian.md)  `[设计与内容属性]`
 
 ### 2026-04-03
 - [API Tester](docs/features/2026-04-03-commander-api-tester.md)  `[流程自动化属性]`
@@ -23,7 +22,6 @@
 - [Assumption Hunter](docs/features/2026-04-03-killjoy-assumption-hunter.md)  `[安全与风险属性]`
 - [status-lens](docs/features/2026-04-03-main-status-lens.md)  `[监控观测属性]`
 - [Status Glance (Maker Sidequest)](docs/features/2026-04-03-maker-status-glance.md)  `[监控观测属性]`
-- [Vibe Voice Guardian](docs/features/2026-04-03-vibe-voice-guardian.md)  `[设计与内容属性]`
 
 ### 2026-04-02
 - [API Pulse Checker (MVB)](docs/features/2026-04-02-api-health-checker.md)  `[监控观测属性]`
@@ -42,8 +40,6 @@
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
-- [Vibe Brand Voice Guardian](docs/features/2026-04-04-vibe-brand-voice-guardian.md)  `[2026-04-04]`
-- [Vibe Voice Guardian](docs/features/2026-04-03-vibe-voice-guardian.md)  `[2026-04-03]`
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
@@ -76,14 +72,12 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
-│       ├── 2026-04-04-vibe-brand-voice-guardian.md
 │       ├── 2026-04-04-report.md
 │       ├── 2026-04-04-maker-status-digest.md
 │       ├── 2026-04-04-main-status-jsonl-inspector.md
 │       ├── 2026-04-04-killjoy-cronflow-audit.md
 │       ├── 2026-04-04-cronflow.md
 │       ├── 2026-04-04-commander-workflow-tracker.md
-│       ├── 2026-04-03-vibe-voice-guardian.md
 │       ├── 2026-04-03-maker-status-glance.md
 │       ├── 2026-04-03-main-status-lens.md
 │       ├── 2026-04-03-killjoy-assumption-hunter.md
