@@ -1,0 +1,54 @@
+# API Assumptions Test File
+# This file documents assumptions about APIs that we should test regularly
+
+assumptions:
+  # GitHub API - Basic availability
+  - name: "GitHub API Basic Test"
+    url: "https://api.github.com"
+    method: "GET"
+    expected_status: 200
+    expected_keys:
+      - "current_user_url"
+      - "emojis_url" 
+      - "search_url"
+      - "zen_url"
+  
+  # JSONPlaceholder - Post endpoint
+  - name: "JSONPlaceholder Post Endpoint"
+    url: "https://jsonplaceholder.typicode.com/posts/1"
+    method: "GET"
+    expected_status: 200
+    expected_keys:
+      - "userId"
+      - "id"
+      - "title"
+      - "body"
+    forbidden_keys:
+      - "nonexistent_field"
+  
+  # HTTPBin - Basic response structure
+  - name: "HTTPBin Get Response"
+    url: "https://httpbin.org/get"
+    method: "GET"
+    expected_status: 200
+    expected_keys:
+      - "args"
+      - "headers"
+      - "url"
+      - "url"
+  
+  # HTTPBin - User Agent test
+  - name: "HTTPBin User Agent Test"
+    url: "https://httpbin.org/user-agent"
+    method: "GET"
+    expected_status: 200
+    expected_keys:
+      - "user-agent"
+  
+  # Public API - Rate limited endpoint
+  - name: "Public API Health Check"
+    url: "https://api.publicapis.org/random"
+    method: "GET"
+    expected_status: 200
+    expected_keys:
+      - "entries"
