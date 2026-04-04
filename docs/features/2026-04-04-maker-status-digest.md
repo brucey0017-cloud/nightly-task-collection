@@ -1,13 +1,14 @@
-# Status Digest（日报摘要生成）
+# status-digest (maker sidequest)
 
 - 日期：`2026-04-04`
+- 模块：`监控观测属性`
 - 来源：`archive/nightly-sidequests/2026-04-04-maker-status-digest`
 
 ## 功能简介
-解析 run status JSONL 并生成 STATUS_DIGEST.md。
+Tiny zero-dependency workflow visibility helper for tonight's run.
 
-## 背景 / 目的
-用一份固定格式摘要代替人工翻日志，提高晨间接班效率。
+## 背景/目的
+该页面用于沉淀 `2026-04-04-maker-status-digest` 的用途、运行方式和交付状态，避免夜间任务信息散落。
 
 ## 目录与文件
 - 根目录：`archive/nightly-sidequests/2026-04-04-maker-status-digest`
@@ -16,16 +17,16 @@
   - `STATUS_DIGEST.md`
   - `status_digest.py`
 
-## 用法 / 测试方法
+## 用法/测试方法
 ```bash
-python3 archive/nightly-sidequests/2026-04-04-maker-status-digest/status_digest.py
+python3 /root/.openclaw/workspace/nightly-sidequests/2026-04-04-maker-status-digest/status_digest.py
 ```
 
 ## 产出与状态
-- 产出：STATUS_DIGEST.md（总事件、分 agent、最新 stage、最近事件）。
-- 状态：✅ 已归档（含产出样例）
+- 产出：已归档文件数：`3`。
+- 状态：✅ 已归档（自动生成）
 
 ## 后续迭代建议
-- 支持模板化输出（简版/详版）
-- 增加失败任务高亮
-- 支持按日期批量生成
+- 补充更清晰的输入/输出示例，降低接手成本。
+- 增加自动化测试或最小 smoke 命令，提升可回归性。
+- 根据实际使用频次，评估是否需要接入 CI 定时巡检。

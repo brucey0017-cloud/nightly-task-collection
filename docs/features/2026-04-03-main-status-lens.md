@@ -1,13 +1,14 @@
-# Status Lens（状态时间线透镜）
+# status-lens
 
 - 日期：`2026-04-03`
+- 模块：`监控观测属性`
 - 来源：`archive/nightly-sidequests/2026-04-03-main-status-lens`
 
 ## 功能简介
-从 status.jsonl 提取每个 agent/task 的阶段时间线与最新快照。
+A tiny zero-dependency Python tool to summarize nightly-lab `status.jsonl` progress.
 
-## 背景 / 目的
-帮助 main 一眼判断夜间流程推进轨迹。
+## 背景/目的
+该页面用于沉淀 `2026-04-03-main-status-lens` 的用途、运行方式和交付状态，避免夜间任务信息散落。
 
 ## 目录与文件
 - 根目录：`archive/nightly-sidequests/2026-04-03-main-status-lens`
@@ -16,16 +17,17 @@
   - `sample.json`
   - `status_lens.py`
 
-## 用法 / 测试方法
+## 用法/测试方法
 ```bash
-python3 archive/nightly-sidequests/2026-04-03-main-status-lens/status_lens.py --status-file /root/.openclaw/workspace/nightly-lab/runs/2026-04-03/status.jsonl
+python3 status_lens.py --status-file /root/.openclaw/workspace/nightly-lab/runs/2026-04-03/status.jsonl
+python3 status_lens.py --status-file /root/.openclaw/workspace/nightly-lab/runs/2026-04-03/status.jsonl --json
 ```
 
 ## 产出与状态
-- 产出：文本或 JSON 视图（timeline + latest stage）。
-- 状态：✅ 已归档（可运行）
+- 产出：已归档文件数：`3`。
+- 状态：✅ 已归档（自动生成）
 
 ## 后续迭代建议
-- 支持 stage 耗时排行榜
-- 增加异常 stage 自动提示
-- 支持跨 run 对比
+- 补充更清晰的输入/输出示例，降低接手成本。
+- 增加自动化测试或最小 smoke 命令，提升可回归性。
+- 根据实际使用频次，评估是否需要接入 CI 定时巡检。

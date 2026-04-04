@@ -1,13 +1,14 @@
-# Workflow Tracker（团队任务追踪器）
+# Commander Workflow Tracker
 
 - 日期：`2026-04-04`
+- 模块：`流程自动化属性`
 - 来源：`archive/nightly-sidequests/2026-04-04-commander-workflow-tracker`
 
 ## 功能简介
-用于团队任务分配、状态更新、成员负载统计与摘要导出的轻量脚手架。
+自动归档任务 `2026-04-04-commander-workflow-tracker`。
 
-## 背景 / 目的
-给 commander 提供侧任务中的协作可视化基础设施。
+## 背景/目的
+该页面用于沉淀 `2026-04-04-commander-workflow-tracker` 的用途、运行方式和交付状态，避免夜间任务信息散落。
 
 ## 目录与文件
 - 根目录：`archive/nightly-sidequests/2026-04-04-commander-workflow-tracker`
@@ -16,17 +17,14 @@
   - `demo_summary.json`
   - `workflow_tracker.py`
 
-## 用法 / 测试方法
-```bash
-python3 archive/nightly-sidequests/2026-04-04-commander-workflow-tracker/demo.py
-python3 archive/nightly-sidequests/2026-04-04-commander-workflow-tracker/workflow_tracker.py dashboard
-```
+## 用法/测试方法
+- 暂无 README 命令示例，可按目录内脚本名补充。
 
 ## 产出与状态
-- 产出：demo_summary.json + 终端 dashboard（按状态/成员聚合）。
-- 状态：✅ 已归档（含 demo 与报告）
+- 产出：已归档文件数：`3`。
+- 状态：✅ 已归档（自动生成）
 
 ## 后续迭代建议
-- 将存储从 /tmp 切到项目内 data/
-- 补齐 CLI 子命令帮助与参数校验
-- 增加 CSV 导出与 web 视图
+- 补充更清晰的输入/输出示例，降低接手成本。
+- 增加自动化测试或最小 smoke 命令，提升可回归性。
+- 根据实际使用频次，评估是否需要接入 CI 定时巡检。

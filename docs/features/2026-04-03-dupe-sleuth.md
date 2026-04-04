@@ -1,13 +1,14 @@
-# DupeSleuth（重复文件侦测）
+# DupeSleuth
 
 - 日期：`2026-04-03`
+- 模块：`工具属性`
 - 来源：`archive/nightly-tools/2026-04-03-dupe-sleuth`
 
 ## 功能简介
-基于 SHA256 的精确重复文件识别，不执行删除。
+A safe, zero-dependency Python 3 CLI to find **exact duplicate files** by SHA256 content hash.
 
-## 背景 / 目的
-给磁盘清理提供“可回看、可手动确认”的安全候选集。
+## 背景/目的
+该页面用于沉淀 `2026-04-03-dupe-sleuth` 的用途、运行方式和交付状态，避免夜间任务信息散落。
 
 ## 目录与文件
 - 根目录：`archive/nightly-tools/2026-04-03-dupe-sleuth`
@@ -16,17 +17,19 @@
   - `create_sample_input.py`
   - `dupe_sleuth.py`
 
-## 用法 / 测试方法
+## 用法/测试方法
 ```bash
-python3 archive/nightly-tools/2026-04-03-dupe-sleuth/create_sample_input.py /tmp/dupe-sample
-python3 archive/nightly-tools/2026-04-03-dupe-sleuth/dupe_sleuth.py /tmp/dupe-sample --verbose
+python3 dupe_sleuth.py /path/to/scan
+python3 dupe_sleuth.py /path/to/scan --verbose
+python3 create_sample_input.py /tmp/dupe-sleuth-sample
+python3 dupe_sleuth.py /tmp/dupe-sleuth-sample
 ```
 
 ## 产出与状态
-- 产出：重复组列表 + KEEP/DEL 建议 + 可回收空间估算。
-- 状态：✅ 已归档（可运行）
+- 产出：已归档文件数：`3`。
+- 状态：✅ 已归档（自动生成）
 
 ## 后续迭代建议
-- 增加按目录白名单/黑名单过滤
-- 支持结果输出到 JSON
-- 增加硬链接识别
+- 补充更清晰的输入/输出示例，降低接手成本。
+- 增加自动化测试或最小 smoke 命令，提升可回归性。
+- 根据实际使用频次，评估是否需要接入 CI 定时巡检。
