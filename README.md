@@ -5,12 +5,13 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-05`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`24`
+- 功能页数量：`25`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-05
 - [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[监控观测属性]`
 - [Assumption Hunter - API Assumption Testing Tool](docs/features/2026-04-05-killjoy-api-assumption-tester.md)  `[安全与风险属性]`
+- [Run Status Brief](docs/features/2026-04-05-main-run-status-brief.md)  `[安全与风险属性]`
 - [Maker Sidequest: Status Board](docs/features/2026-04-05-maker-status-board.md)  `[监控观测属性]`
 - [SSL Cert Monitor](docs/features/2026-04-05-ssl-cert-monitor.md)  `[监控观测属性]`
 
@@ -68,6 +69,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [Run Status Brief](docs/features/2026-04-05-main-run-status-brief.md)  `[2026-04-05]`
 - [Assumption Hunter - API Assumption Testing Tool](docs/features/2026-04-05-killjoy-api-assumption-tester.md)  `[2026-04-05]`
 - [Killjoy: CronFlow Security Audit Tool](docs/features/2026-04-04-killjoy-cronflow-audit.md)  `[2026-04-04]`
 - [Assumption Hunter](docs/features/2026-04-03-killjoy-assumption-hunter.md)  `[2026-04-03]`
@@ -88,6 +90,7 @@ nightly-task-collection/
 │   └── features/
 │       ├── 2026-04-05-ssl-cert-monitor.md
 │       ├── 2026-04-05-maker-status-board.md
+│       ├── 2026-04-05-main-run-status-brief.md
 │       ├── 2026-04-05-killjoy-api-assumption-tester.md
 │       ├── 2026-04-05-commander-workflow-glance.md
 │       ├── 2026-04-04-vibe-brand-voice-guardian.md
