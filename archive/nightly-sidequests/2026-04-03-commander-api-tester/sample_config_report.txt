@@ -1,0 +1,15 @@
+
+API Testing Report
+=================
+Total Tests: 5
+Passed: 4
+Failed: 1
+Success Rate: 80.0%
+
+Detailed Results:
+----------------
+1. ✅ PASS - GET https://api.github.com/users/octocat - Status: 200 - Duration: 0.35s - Response: {'login': 'octocat', 'id': 583231, 'node_id': 'MDQ6VXNlcjU4MzIzMQ==', 'avatar_url': 'https://avatars...
+2. ✅ PASS - GET https://jsonplaceholder.typicode.com/posts/1 - Status: 200 - Duration: 0.036s - Response: {'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio repreh...
+3. ✅ PASS - POST https://jsonplaceholder.typicode.com/posts - Status: 201 - Duration: 0.26s - Response: {'title': 'Test Post', 'body': 'This is a test post created by API tester', 'userId': 1, 'id': 101}
+4. ✅ PASS - GET https://httpbin.org/status/200 - Status: 200 - Duration: 1.127s
+5. ❌ FAIL - GET https://httpbin.org/status/404 - Status: 404 - Error: HTTP Error 404: NOT FOUND - Duration: 0.963s

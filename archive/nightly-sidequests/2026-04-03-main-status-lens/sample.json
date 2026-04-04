@@ -1,0 +1,222 @@
+{
+  "event_count": 23,
+  "latest": [
+    {
+      "agent": "commander",
+      "task": "sidequest",
+      "ts": "2026-04-02T19:07:13.195049+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-sidequests/2026-04-03-commander-api-tester",
+      "error_code": ""
+    },
+    {
+      "agent": "commander",
+      "task": "team",
+      "ts": "2026-04-02T16:35:45.560723+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-lab/runs/2026-04-03/01-commander.md",
+      "error_code": ""
+    },
+    {
+      "agent": "killjoy",
+      "task": "sidequest",
+      "ts": "2026-04-02T20:27:46.273437+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-sidequests/2026-04-03/killjoy",
+      "error_code": ""
+    },
+    {
+      "agent": "killjoy",
+      "task": "team",
+      "ts": "2026-04-02T17:56:12.043630+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-lab/runs/2026-04-03/03-killjoy.md",
+      "error_code": ""
+    },
+    {
+      "agent": "main",
+      "task": "sidequest",
+      "ts": "2026-04-02T20:34:04.224329+00:00",
+      "stage": "artifact",
+      "artifact": "/root/.openclaw/workspace/nightly-sidequests/2026-04-03-main-status-lens",
+      "error_code": ""
+    },
+    {
+      "agent": "maker",
+      "task": "sidequest",
+      "ts": "2026-04-02T20:31:29.740527+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-sidequests/2026-04-03-maker-status-glance",
+      "error_code": ""
+    },
+    {
+      "agent": "maker",
+      "task": "team",
+      "ts": "2026-04-02T18:00:53.651828+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-tools/2026-04-03-dupe-sleuth",
+      "error_code": ""
+    },
+    {
+      "agent": "vibe",
+      "task": "sidequest",
+      "ts": "2026-04-02T19:34:03.391715+00:00",
+      "stage": "start",
+      "artifact": "",
+      "error_code": ""
+    },
+    {
+      "agent": "vibe",
+      "task": "team",
+      "ts": "2026-04-02T17:37:15.171384+00:00",
+      "stage": "done",
+      "artifact": "/root/.openclaw/workspace/nightly-lab/runs/2026-04-03/02-vibe.md",
+      "error_code": ""
+    }
+  ],
+  "timeline": {
+    "commander": {
+      "team": [
+        {
+          "ts": "2026-04-02T16:35:24.386725+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T16:35:43.380558+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T16:35:45.560723+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ],
+      "sidequest": [
+        {
+          "ts": "2026-04-02T19:05:48.588156+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T19:07:08.107701+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T19:07:13.195049+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ]
+    },
+    "vibe": {
+      "team": [
+        {
+          "ts": "2026-04-02T17:29:21.291897+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T17:37:15.171384+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ],
+      "sidequest": [
+        {
+          "ts": "2026-04-02T19:34:03.391715+00:00",
+          "stage": "start",
+          "error_code": ""
+        }
+      ]
+    },
+    "killjoy": {
+      "team": [
+        {
+          "ts": "2026-04-02T17:55:56.155482+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T17:56:09.759829+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T17:56:12.043630+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ],
+      "sidequest": [
+        {
+          "ts": "2026-04-02T20:25:46.492026+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T20:27:39.710686+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T20:27:46.273437+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ]
+    },
+    "maker": {
+      "team": [
+        {
+          "ts": "2026-04-02T17:57:17.047030+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T17:59:21.302358+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T18:00:53.651828+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ],
+      "sidequest": [
+        {
+          "ts": "2026-04-02T20:28:53.054255+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T20:29:55.100553+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T20:31:29.740527+00:00",
+          "stage": "done",
+          "error_code": ""
+        }
+      ]
+    },
+    "main": {
+      "sidequest": [
+        {
+          "ts": "2026-04-02T20:32:33.014352+00:00",
+          "stage": "start",
+          "error_code": ""
+        },
+        {
+          "ts": "2026-04-02T20:34:04.224329+00:00",
+          "stage": "artifact",
+          "error_code": ""
+        }
+      ]
+    }
+  }
+}

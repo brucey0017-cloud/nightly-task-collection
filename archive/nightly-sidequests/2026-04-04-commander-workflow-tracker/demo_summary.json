@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-04-04T03:06:26.840640",
+  "total_tasks": 10,
+  "task_status_breakdown": {
+    "todo": 3,
+    "in_progress": 3,
+    "done": 2,
+    "blocked": 2
+  },
+  "member_workload": {
+    "commander": 2,
+    "maker": 4,
+    "vibe": 2,
+    "killjoy": 2
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tests": [
+    {
+      "name": "GitHub API - Get user",
+      "url": "https://api.github.com/users/octocat",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/vnd.github.v3+json"
+      },
+      "timeout": 30
+    },
+    {
+      "name": "JSONPlaceholder - Get posts",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "method": "GET",
+      "timeout": 20
+    },
+    {
+      "name": "JSONPlaceholder - Create post",
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "data": {
+        "title": "Test Post",
+        "body": "This is a test post created by API tester",
+        "userId": 1
+      },
+      "timeout": 30
+    },
+    {
+      "name": "HTTP Status Codes",
+      "url": "https://httpbin.org/status/200",
+      "method": "GET",
+      "timeout": 20
+    },
+    {
+      "name": "Failed Request",
+      "url": "https://httpbin.org/status/404",
+      "method": "GET",
+      "timeout": 20
+    }
+  ]
+}

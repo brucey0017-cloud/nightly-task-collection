@@ -1,0 +1,12 @@
+2025-04-01T10:00:01Z INFO server started on port 8080
+2025-04-01T10:05:12Z WARN connection pool running low (3 remaining)
+2025-04-01T10:05:15Z WARN connection pool running low (2 remaining)
+2025-04-01T10:06:22Z ERROR query timeout for user 49281
+2025-04-01T10:07:33Z ERROR query timeout for user 99102
+2025-04-01T10:08:44Z ERROR query timeout for user 11203
+2025-04-01T10:10:55Z WARN slow response from upstream /api/v1/orders
+2025-04-01T10:11:02Z WARN slow response from upstream /api/v1/orders
+2025-04-01T10:12:19Z FATAL unhandled exception in worker-7: OutOfMemoryError
+2025-04-01T10:13:20Z ERROR disk write failed at /var/lib/data/part-9
+2025-04-01T10:14:21Z ERROR disk write failed at /var/lib/data/part-12
+2025-04-01T10:15:22Z INFO routine healthcheck passed

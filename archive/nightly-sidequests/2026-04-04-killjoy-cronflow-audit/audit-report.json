@@ -1,0 +1,179 @@
+{
+  "audit_tool": "Killjoy",
+  "version": "1.0.0",
+  "timestamp": "2026-04-04T04:39:09.036981",
+  "results": {
+    "parsing": {
+      "passed": false,
+      "duration_ms": 4436.219999999999,
+      "findings": [
+        {
+          "severity": "critical",
+          "category": "security",
+          "test_name": "parse_line_command_injection",
+          "description": "Potentially dangerous pattern accepted: Command injection attempt",
+          "details": {
+            "input": "$(whoami) * * * * /usr/bin/test",
+            "parsed": "CronEntry(source='test', raw_line='$(whoami) * * * * /usr/bin/test', schedule='$(whoami) * * * *', c"
+          },
+          "recommendation": "Reject or sanitize shell metacharacters in schedule fields"
+        },
+        {
+          "severity": "critical",
+          "category": "security",
+          "test_name": "parse_line_backtick_injection",
+          "description": "Potentially dangerous pattern accepted: Backtick injection",
+          "details": {
+            "input": "`whoami` * * * * /usr/bin/test",
+            "parsed": "CronEntry(source='test', raw_line='`whoami` * * * * /usr/bin/test', schedule='`whoami` * * * *', com"
+          },
+          "recommendation": "Reject or sanitize shell metacharacters in schedule fields"
+        },
+        {
+          "severity": "critical",
+          "category": "security",
+          "test_name": "parse_line_semicolon_injection",
+          "description": "Potentially dangerous pattern accepted: Semicolon injection",
+          "details": {
+            "input": "; rm -rf / # * * * * /usr/bin/test",
+            "parsed": "CronEntry(source='test', raw_line='; rm -rf / # * * * * /usr/bin/test', schedule='; rm -rf / #', com"
+          },
+          "recommendation": "Reject or sanitize shell metacharacters in schedule fields"
+        },
+        {
+          "severity": "low",
+          "category": "parsing",
+          "test_name": "macro_case_@HOURLY",
+          "description": "Macro parsing is case-sensitive (may be intentional)",
+          "details": {
+            "macro": "@HOURLY",
+            "parsed": true
+          },
+          "recommendation": "Consider documenting case sensitivity behavior"
+        },
+        {
+          "severity": "high",
+          "category": "security",
+          "test_name": "env_backtick_in_value",
+          "description": "Environment variable with command substitution accepted",
+          "details": {
+            "line": "VAR=`whoami`",
+            "detected_as_env": "True"
+          },
+          "recommendation": "Warn users about command substitution in env variables"
+        },
+        {
+          "severity": "high",
+          "category": "security",
+          "test_name": "env_command_sub_in_value",
+          "description": "Environment variable with command substitution accepted",
+          "details": {
+            "line": "VAR=$(id)",
+            "detected_as_env": "True"
+          },
+          "recommendation": "Warn users about command substitution in env variables"
+        }
+      ]
+    },
+    "security": {
+      "passed": false,
+      "duration_ms": 1.117,
+      "findings": [
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "file_access_file_read_0",
+          "description": "File access without symlink protection: File read operation",
+          "details": {
+            "context": "():\n        try:\n            for line in home_cron.read_text(encoding=\"utf-8\", errors=\"replace\").spl"
+          },
+          "recommendation": "Check for symlink attacks before reading files"
+        },
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "file_access_file_read_1",
+          "description": "File access without symlink protection: File read operation",
+          "details": {
+            "context": ".R_OK):\n        try:\n            for line in spool.read_text(encoding=\"utf-8\", errors=\"replace\").spl"
+          },
+          "recommendation": "Check for symlink attacks before reading files"
+        },
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "file_access_exist_check_0",
+          "description": "File access without symlink protection: Existence check",
+          "details": {
+            "context": "e_cron = Path.home() / \".crontab\"\n    if home_cron.exists() and home_cron.is_file():\n        try:\n  "
+          },
+          "recommendation": "Check for symlink attacks before reading files"
+        },
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "file_access_exist_check_1",
+          "description": "File access without symlink protection: Existence check",
+          "details": {
+            "context": "pool = Path(\"/var/spool/cron\") / user\n    if spool.exists() and spool.is_file() and os.access(spool,"
+          },
+          "recommendation": "Check for symlink attacks before reading files"
+        },
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "file_access_access_check_0",
+          "description": "File access without symlink protection: OS access check",
+          "details": {
+            "context": "ser\n    if spool.exists() and spool.is_file() and os.access(spool, os.R_OK):\n        try:\n          "
+          },
+          "recommendation": "Check for symlink attacks before reading files"
+        },
+        {
+          "severity": "info",
+          "category": "security",
+          "test_name": "subprocess_no_shell",
+          "description": "subprocess.run uses shell=False (good practice)",
+          "details": {},
+          "recommendation": "None - this is the recommended approach"
+        },
+        {
+          "severity": "low",
+          "category": "reliability",
+          "test_name": "subprocess_check_false",
+          "description": "subprocess.run uses check=False",
+          "details": {},
+          "recommendation": "Consider handling return codes explicitly"
+        },
+        {
+          "severity": "medium",
+          "category": "security",
+          "test_name": "symlink_file_read",
+          "description": "Symlink targets may be followed when reading files",
+          "details": {
+            "symlink": "/tmp/tmpw6vq08x7/.crontab",
+            "target": "/tmp/tmpw6vq08x7/secret.txt"
+          },
+          "recommendation": "Use os.path.realpath() and validate paths before reading"
+        }
+      ]
+    },
+    "logic": {
+      "passed": false,
+      "duration_ms": 481.906,
+      "findings": [
+        {
+          "severity": "low",
+          "category": "logic",
+          "test_name": "bucket_past_time",
+          "description": "Past times should be marked as Unknown or 'passed'",
+          "details": {
+            "result": "'Next Hour'",
+            "desc": "Past datetime"
+          },
+          "recommendation": "Consider special handling for past times"
+        }
+      ]
+    }
+  }
+}

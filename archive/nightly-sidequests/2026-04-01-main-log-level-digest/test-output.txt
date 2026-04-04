@@ -1,0 +1,33 @@
+Total lines: 15
+Counts by level:
+  TRACE: 1
+  DEBUG: 3
+  INFO: 5
+  WARN: 2
+  ERROR: 2
+  FATAL: 1
+  CRITICAL: 1
+
+Last 3 error-ish lines:
+2024-01-15 09:23:09 ERROR [worker] Job 7 failed: timeout
+2024-01-15 09:23:10 FATAL [worker] Worker thread crashed
+2024-01-15 09:23:13 CRITICAL [main] Unable to flush logs
+---
+{
+  "total_lines": 15,
+  "counts": {
+    "TRACE": 1,
+    "DEBUG": 3,
+    "INFO": 5,
+    "WARN": 2,
+    "ERROR": 2,
+    "FATAL": 1,
+    "CRITICAL": 1
+  },
+  "last_errors": [
+    "2024-01-15 09:23:06 ERROR [auth] Invalid token signature",
+    "2024-01-15 09:23:09 ERROR [worker] Job 7 failed: timeout",
+    "2024-01-15 09:23:10 FATAL [worker] Worker thread crashed",
+    "2024-01-15 09:23:13 CRITICAL [main] Unable to flush logs"
+  ]
+}

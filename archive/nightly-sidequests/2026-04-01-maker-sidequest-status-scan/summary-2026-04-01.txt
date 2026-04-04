@@ -1,0 +1,10 @@
+Sidequest Status Summary
+- Root: /root/.openclaw/workspace/nightly-lab/sidequests
+- Date filter: 2026-04-01
+- Total reports: 2
+- Status counts:
+  - ✅ Complete and tested: 1
+  - ✅ Complete. Scanner detects 5 vulnerabilities including 3 critical/high severity issues, exits with error code when critical issues found.: 1
+- Reports:
+  - 2026-04-01 / KILLJOY: status=✅ Complete. Scanner detects 5 vulnerabilities including 3 critical/high severity issues, exits with error code when critical issues found. | template=ok | built=Zero-dependency configuration vulnerability scanner that detects hardcoded se...
+  - 2026-04-01 / vibe: status=✅ Complete and tested | template=ok | built=Tone & Rhythm Text Analyzer - a Python-based brand voice linter for soul desi...

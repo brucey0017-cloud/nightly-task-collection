@@ -1,0 +1,12 @@
+# Sample config for pulse
+# Format: URL or NAME=URL
+
+# Fast public JSON APIs for testing
+JSONPlaceholder=https://jsonplaceholder.typicode.com/posts/1
+HTTPBin JSON=https://httpbin.org/json
+
+# This will likely be slow or timeout (for testing slow detection)
+# httpbin.org/delay/6
+
+# This will fail (for testing failure detection)
+# Invalid Endpoint=http://localhost:99999/invalid

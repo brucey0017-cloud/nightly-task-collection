@@ -1,0 +1,5 @@
+Mar 31 14:23:01 WARNING backup job 001 stalled
+Mar 31 14:24:02 WARNING backup job 002 stalled
+Mar 31 14:25:03 ERROR backup upload failed for bucket prod-logs-7
+Apr 01 09:00:12 ERROR backup upload failed for bucket prod-logs-9
+Apr 01 09:01:45 WARN connection pool running low (1 remaining)

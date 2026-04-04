@@ -1,0 +1,15 @@
+2024-01-15 09:23:01 INFO  [main] Application started
+2024-01-15 09:23:02 DEBUG [db] Connecting to database
+2024-01-15 09:23:03 INFO  [db] Connection established
+2024-01-15 09:23:04 TRACE [http] Incoming request /health
+2024-01-15 09:23:05 WARN  [cache] Cache miss for key user:42
+2024-01-15 09:23:06 ERROR [auth] Invalid token signature
+2024-01-15 09:23:07 DEBUG [auth] Token decode attempted
+2024-01-15 09:23:08 INFO  [http] 200 OK /health
+2024-01-15 09:23:09 ERROR [worker] Job 7 failed: timeout
+2024-01-15 09:23:10 FATAL [worker] Worker thread crashed
+2024-01-15 09:23:11 DEBUG [main] Shutdown signal received
+2024-01-15 09:23:12 INFO  [main] Graceful shutdown started
+2024-01-15 09:23:13 CRITICAL [main] Unable to flush logs
+2024-01-15 09:23:14 WARN  [db] Slow query detected (2.3s)
+2024-01-15 09:23:15 INFO  [main] Application stopped

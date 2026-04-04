@@ -1,0 +1,11 @@
+# Sidequest Report
+- Date: 2026-04-04
+- Agent: commander
+- Built / explored: Simple workflow tracker tool for team coordination
+- Why this is useful: Provides visibility into project progress, task distribution, and team workload - essential for strategic decision making as commander
+- Folder: `/root/.openclaw/workspace/nightly-sidequests/2026-04-04-commander-workflow-tracker/`
+- Files:
+  - `workflow_tracker.py` - Main Python tool with full functionality
+  - `demo.py` - Demonstration script
+- Test command: `cd /root/.openclaw/workspace/nightly-sidequests/2026-04-04-commander-workflow-tracker/ && python3 demo.py`
+- Status: ✅ Complete
