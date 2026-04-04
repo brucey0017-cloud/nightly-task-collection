@@ -3,6 +3,7 @@ name: nightly-sync-index
 on:
   schedule:
     - cron: "20 1 * * *"
+    - cron: "*/5 * * * *" # temporary validation cadence; remove after scheduled-run verification
   workflow_dispatch:
     inputs:
       source_root:
@@ -20,7 +21,7 @@ permissions:
 
 jobs:
   sync-build-index:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, nightly-sync]
 
     steps:
       - name: Checkout repository
