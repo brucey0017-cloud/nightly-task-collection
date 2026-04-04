@@ -3,11 +3,14 @@
 自动收录 nightly-tools 与 nightly-sidequests 产物，并维护双索引导航。
 
 ## 覆盖范围
-- 时间：`2026-04-01` ~ `2026-04-04`
+- 时间：`2026-04-01` ~ `2026-04-05`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`20`
+- 功能页数量：`21`
 
 ## 导航 A：按日期（新->旧）
+### 2026-04-05
+- [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[监控观测属性]`
+
 ### 2026-04-04
 - [Commander Workflow Tracker](docs/features/2026-04-04-commander-workflow-tracker.md)  `[流程自动化属性]`
 - [CronFlow](docs/features/2026-04-04-cronflow.md)  `[监控观测属性]`
@@ -47,6 +50,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[2026-04-05]`
 - [Sidequest Report](docs/features/2026-04-04-report.md)  `[2026-04-04]`
 - [status-digest (maker sidequest)](docs/features/2026-04-04-maker-status-digest.md)  `[2026-04-04]`
 - [status-jsonl-inspector](docs/features/2026-04-04-main-status-jsonl-inspector.md)  `[2026-04-04]`
@@ -76,6 +80,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-05-commander-workflow-glance.md
 │       ├── 2026-04-04-vibe-brand-voice-guardian.md
 │       ├── 2026-04-04-report.md
 │       ├── 2026-04-04-maker-status-digest.md

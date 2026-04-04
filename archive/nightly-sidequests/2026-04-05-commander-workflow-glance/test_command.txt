@@ -1,0 +1,24 @@
+# Test Workflow Glance Tool
+
+1. Navigate to the tool directory:
+   cd /root/.openclaw/workspace/nightly-sidequests/2026-04-05-commander-workflow-glance/
+
+2. Run the tool:
+   python3 workflow_glance.py
+
+3. Expected output:
+   - Current timestamp display
+   - Active processes section
+   - Recent workspace activity section
+   - Status summary with checkmarks
+   - Tool information
+
+4. Verify the tool shows:
+   ✅ Zero-dependency Python script
+   ✅ Self-contained workflow monitoring
+   ✅ Quick team coordination aid
+   ✅ No external API calls required
+
+5. The tool should run without errors and complete quickly (< 5 seconds)
+
+Test completed when you see the status summary section.
