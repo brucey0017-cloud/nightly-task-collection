@@ -78,6 +78,26 @@ def ensure_dir(path: Path, dry_run: bool, stats: Stats) -> None:
     stats.dirs_created += 1
 
 
+def ensure_keep_file(dst_dir: Path, dry_run: bool) -> None:
+    keep = dst_dir / ".keep"
+    if keep.exists():
+        return
+    if dry_run:
+        print(f"[DRY-RUN] touch {keep}")
+    else:
+        keep.write_text("", encoding="utf-8")
+
+
+def remove_keep_file(dst_dir: Path, dry_run: bool) -> None:
+    keep = dst_dir / ".keep"
+    if not keep.exists():
+        return
+    if dry_run:
+        print(f"[DRY-RUN] rm {keep}")
+    else:
+        keep.unlink()
+
+
 def sync_tree(src_root: Path, dst_root: Path, dry_run: bool, stats: Stats) -> None:
     try:
         exists = src_root.exists()
@@ -123,6 +143,16 @@ def sync_tree(src_root: Path, dst_root: Path, dry_run: bool, stats: Stats) -> No
         rel = src_dir.relative_to(src_root)
         dst_dir = dst_root / rel
         ensure_dir(dst_dir, dry_run, stats)
+
+        # Preserve empty source directories in git via .keep marker.
+        try:
+            is_empty = next(src_dir.iterdir(), None) is None
+        except PermissionError:
+            is_empty = False
+        if is_empty:
+            ensure_keep_file(dst_dir, dry_run)
+        else:
+            remove_keep_file(dst_dir, dry_run)
 
     # Copy new/changed files
     for src_file in source_files:

@@ -192,6 +192,8 @@ def list_files_for_page(task_dir: Path) -> list[str]:
             continue
         if p.suffix in {".pyc", ".pyo"}:
             continue
+        if p.name in {".keep", ".gitkeep"}:
+            continue
         out.append(str(p.relative_to(task_dir)))
     return out
 
