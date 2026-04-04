@@ -5,11 +5,12 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-05`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`21`
+- 功能页数量：`22`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-05
 - [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[监控观测属性]`
+- [SSL Cert Monitor](docs/features/2026-04-05-ssl-cert-monitor.md)  `[监控观测属性]`
 
 ### 2026-04-04
 - [Commander Workflow Tracker](docs/features/2026-04-04-commander-workflow-tracker.md)  `[流程自动化属性]`
@@ -50,6 +51,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [SSL Cert Monitor](docs/features/2026-04-05-ssl-cert-monitor.md)  `[2026-04-05]`
 - [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[2026-04-05]`
 - [Sidequest Report](docs/features/2026-04-04-report.md)  `[2026-04-04]`
 - [status-digest (maker sidequest)](docs/features/2026-04-04-maker-status-digest.md)  `[2026-04-04]`
@@ -80,6 +82,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-05-ssl-cert-monitor.md
 │       ├── 2026-04-05-commander-workflow-glance.md
 │       ├── 2026-04-04-vibe-brand-voice-guardian.md
 │       ├── 2026-04-04-report.md

@@ -1,0 +1,5 @@
+# Sample HTTPS targets
+https://sha256.badssl.com
+https://expired.badssl.com
+https://self-signed.badssl.com
+https://example.invalid

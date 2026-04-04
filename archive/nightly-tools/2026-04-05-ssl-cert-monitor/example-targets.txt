@@ -1,0 +1,12 @@
+# Sample targets file - one target per line
+# Lines starting with # are ignored
+
+https://google.com
+https://github.com
+https://cloudflare.com
+
+# Self-signed cert test (will return UNKNOWN)
+https://self-signed.badssl.com
+
+# Expired cert test (will return EXPIRED)
+https://expired.badssl.com
