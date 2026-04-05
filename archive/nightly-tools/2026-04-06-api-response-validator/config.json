@@ -1,0 +1,27 @@
+{
+  "fail_fast": true,
+  "endpoints": {
+    "test_success": {
+      "url": "file:///root/.openclaw/workspace/nightly-tools/2026-04-06-api-response-validator/sample-success.json",
+      "required": ["id", "name", "active", "count"],
+      "types": {
+        "id": "number",
+        "name": "string",
+        "active": "boolean",
+        "count": "number"
+      }
+    },
+    "test_failure": {
+      "url": "file:///root/.openclaw/workspace/nightly-tools/2026-04-06-api-response-validator/sample-failure.json",
+      "required": ["id", "name", "status"],
+      "types": {
+        "id": "number",
+        "name": "string",
+        "status": "string"
+      },
+      "enums": {
+        "status": ["active", "inactive"]
+      }
+    }
+  }
+}
