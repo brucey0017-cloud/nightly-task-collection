@@ -1,0 +1,112 @@
+{
+  "audited_at": "2026-04-06T04:28:15.606684",
+  "status_file": "/root/.openclaw/workspace/nightly-lab/runs/2026-04-06/status.jsonl",
+  "current_run_file": "/root/.openclaw/workspace/nightly-lab/current-run.json",
+  "total_issues": 11,
+  "issues": [
+    {
+      "type": "unresolved_placeholder",
+      "line": 4,
+      "agent": "killjoy",
+      "task": "team",
+      "stage": "start",
+      "field": "report",
+      "value": "team_reports.killjoy",
+      "message": "Unresolved placeholder in report: 'team_reports.killjoy'"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 5,
+      "agent": "killjoy",
+      "task": "team",
+      "stage": "artifact",
+      "field": "report",
+      "value": "team_reports.killjoy",
+      "message": "Unresolved placeholder in report: 'team_reports.killjoy'"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 5,
+      "agent": "killjoy",
+      "task": "team",
+      "stage": "artifact",
+      "field": "artifact",
+      "value": "team_reports.killjoy",
+      "message": "Unresolved placeholder in artifact: 'team_reports.killjoy'"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 6,
+      "agent": "killjoy",
+      "task": "team",
+      "stage": "done",
+      "field": "report",
+      "value": "team_reports.killjoy",
+      "message": "Unresolved placeholder in report: 'team_reports.killjoy'"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 6,
+      "agent": "killjoy",
+      "task": "team",
+      "stage": "done",
+      "field": "artifact",
+      "value": "team_reports.killjoy",
+      "message": "Unresolved placeholder in artifact: 'team_reports.killjoy'"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 14,
+      "agent": "killjoy",
+      "task": "sidequest",
+      "stage": "start",
+      "field": "report",
+      "value": "sidequest_reports.killjoy",
+      "message": "Unresolved placeholder in report: 'sidequest_reports.killjoy'"
+    },
+    {
+      "type": "empty_report",
+      "line": 15,
+      "agent": "killjoy",
+      "task": "sidequest",
+      "stage": "artifact",
+      "message": "Empty report path at 'artifact' stage"
+    },
+    {
+      "type": "unresolved_placeholder",
+      "line": 16,
+      "agent": "killjoy",
+      "task": "sidequest",
+      "stage": "done",
+      "field": "report",
+      "value": "sidequest_reports.killjoy",
+      "message": "Unresolved placeholder in report: 'sidequest_reports.killjoy'"
+    },
+    {
+      "type": "missing_report",
+      "line": 21,
+      "agent": "main",
+      "task": "sidequest",
+      "stage": "artifact",
+      "value": "/root/.openclaw/workspace/nightly-lab/sidequests/2026-04-06/main.md",
+      "message": "Report path does not exist: '/root/.openclaw/workspace/nightly-lab/sidequests/2026-04-06/main.md'"
+    },
+    {
+      "type": "duplicate_stage",
+      "line": 11,
+      "agent": "commander",
+      "task": "sidequest",
+      "stage": "start",
+      "message": "Duplicate 'start' stage for commander/sidequest"
+    },
+    {
+      "type": "missing_stages",
+      "agent": "main",
+      "task": "sidequest",
+      "stages": [
+        "done"
+      ],
+      "message": "Missing stages for main/sidequest: ['done']"
+    }
+  ]
+}
