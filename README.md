@@ -5,11 +5,12 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-06`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`26`
+- 功能页数量：`27`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-06
 - [API Response Validator](docs/features/2026-04-06-api-response-validator.md)  `[工具属性]`
+- [Killjoy Assumption Stress Test](docs/features/2026-04-06-killjoy-assumption-stress-test.md)  `[安全与风险属性]`
 
 ### 2026-04-05
 - [Workflow Glance - Quick OpenClaw Status Tool](docs/features/2026-04-05-commander-workflow-glance.md)  `[监控观测属性]`
@@ -73,6 +74,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [Killjoy Assumption Stress Test](docs/features/2026-04-06-killjoy-assumption-stress-test.md)  `[2026-04-06]`
 - [Run Status Brief](docs/features/2026-04-05-main-run-status-brief.md)  `[2026-04-05]`
 - [Assumption Hunter - API Assumption Testing Tool](docs/features/2026-04-05-killjoy-api-assumption-tester.md)  `[2026-04-05]`
 - [Killjoy: CronFlow Security Audit Tool](docs/features/2026-04-04-killjoy-cronflow-audit.md)  `[2026-04-04]`
@@ -92,6 +94,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-06-killjoy-assumption-stress-test.md
 │       ├── 2026-04-06-api-response-validator.md
 │       ├── 2026-04-05-ssl-cert-monitor.md
 │       ├── 2026-04-05-maker-status-board.md
