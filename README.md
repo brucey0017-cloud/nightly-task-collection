@@ -5,11 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-07`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`30`
+- 功能页数量：`33`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-07
+- [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[工具属性]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[监控观测属性]`
+- [🔪 Pre-Mortem Assumption Hunter](docs/features/2026-04-07-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [Copy Tone Guard (VIBE sidequest)](docs/features/2026-04-07-vibe-copy-tone-guard.md)  `[设计与内容属性]`
 
 ### 2026-04-06
 - [API Response Validator](docs/features/2026-04-06-api-response-validator.md)  `[工具属性]`
@@ -54,11 +57,13 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[2026-04-07]`
 - [API Response Validator](docs/features/2026-04-06-api-response-validator.md)  `[2026-04-06]`
 - [DupeSleuth](docs/features/2026-04-03-dupe-sleuth.md)  `[2026-04-03]`
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
+- [Copy Tone Guard (VIBE sidequest)](docs/features/2026-04-07-vibe-copy-tone-guard.md)  `[2026-04-07]`
 - [Vibe Brand Voice Guardian](docs/features/2026-04-04-vibe-brand-voice-guardian.md)  `[2026-04-04]`
 - [Vibe Voice Guardian](docs/features/2026-04-03-vibe-voice-guardian.md)  `[2026-04-03]`
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
@@ -81,6 +86,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [🔪 Pre-Mortem Assumption Hunter](docs/features/2026-04-07-killjoy-premortem-cli.md)  `[2026-04-07]`
 - [status-reference-audit](docs/features/2026-04-06-main-status-reference-audit.md)  `[2026-04-06]`
 - [Killjoy Assumption Stress Test](docs/features/2026-04-06-killjoy-assumption-stress-test.md)  `[2026-04-06]`
 - [Run Status Brief](docs/features/2026-04-05-main-run-status-brief.md)  `[2026-04-05]`
@@ -102,7 +108,10 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-07-vibe-copy-tone-guard.md
+│       ├── 2026-04-07-killjoy-premortem-cli.md
 │       ├── 2026-04-07-git-dirty.md
+│       ├── 2026-04-07-commander-run-dashboard.md
 │       ├── 2026-04-06-maker-status-timeline.md
 │       ├── 2026-04-06-main-status-reference-audit.md
 │       ├── 2026-04-06-killjoy-assumption-stress-test.md
