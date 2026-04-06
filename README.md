@@ -5,13 +5,15 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-07`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`33`
+- 功能页数量：`35`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-07
 - [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[工具属性]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[监控观测属性]`
 - [🔪 Pre-Mortem Assumption Hunter](docs/features/2026-04-07-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [run-integrity-audit](docs/features/2026-04-07-main-run-integrity-audit.md)  `[安全与风险属性]`
+- [status-jsonl-inspector](docs/features/2026-04-07-maker-status-jsonl-inspector.md)  `[监控观测属性]`
 - [Copy Tone Guard (VIBE sidequest)](docs/features/2026-04-07-vibe-copy-tone-guard.md)  `[设计与内容属性]`
 
 ### 2026-04-06
@@ -69,6 +71,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [status-jsonl-inspector](docs/features/2026-04-07-maker-status-jsonl-inspector.md)  `[2026-04-07]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[2026-04-07]`
 - [status_timeline](docs/features/2026-04-06-maker-status-timeline.md)  `[2026-04-06]`
 - [SSL Cert Monitor](docs/features/2026-04-05-ssl-cert-monitor.md)  `[2026-04-05]`
@@ -86,6 +89,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [run-integrity-audit](docs/features/2026-04-07-main-run-integrity-audit.md)  `[2026-04-07]`
 - [🔪 Pre-Mortem Assumption Hunter](docs/features/2026-04-07-killjoy-premortem-cli.md)  `[2026-04-07]`
 - [status-reference-audit](docs/features/2026-04-06-main-status-reference-audit.md)  `[2026-04-06]`
 - [Killjoy Assumption Stress Test](docs/features/2026-04-06-killjoy-assumption-stress-test.md)  `[2026-04-06]`
@@ -109,6 +113,8 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-07-vibe-copy-tone-guard.md
+│       ├── 2026-04-07-maker-status-jsonl-inspector.md
+│       ├── 2026-04-07-main-run-integrity-audit.md
 │       ├── 2026-04-07-killjoy-premortem-cli.md
 │       ├── 2026-04-07-git-dirty.md
 │       ├── 2026-04-07-commander-run-dashboard.md
