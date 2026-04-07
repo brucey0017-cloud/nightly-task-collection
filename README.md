@@ -5,12 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-08`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`37`
+- 功能页数量：`39`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-08
 - [Commander Status Briefing](docs/features/2026-04-08-commander-status-briefing.md)  `[监控观测属性]`
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[监控观测属性]`
+- [🔪 Risk Drift Scanner](docs/features/2026-04-08-killjoy-risk-drift-scanner.md)  `[安全与风险属性]`
+- [Mention Guard (Sidequest)](docs/features/2026-04-08-vibe-mention-guard.md)  `[设计与内容属性]`
 
 ### 2026-04-07
 - [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[工具属性]`
@@ -69,6 +71,7 @@
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
+- [Mention Guard (Sidequest)](docs/features/2026-04-08-vibe-mention-guard.md)  `[2026-04-08]`
 - [Copy Tone Guard (VIBE sidequest)](docs/features/2026-04-07-vibe-copy-tone-guard.md)  `[2026-04-07]`
 - [Vibe Brand Voice Guardian](docs/features/2026-04-04-vibe-brand-voice-guardian.md)  `[2026-04-04]`
 - [Vibe Voice Guardian](docs/features/2026-04-03-vibe-voice-guardian.md)  `[2026-04-03]`
@@ -95,6 +98,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [🔪 Risk Drift Scanner](docs/features/2026-04-08-killjoy-risk-drift-scanner.md)  `[2026-04-08]`
 - [run-integrity-audit](docs/features/2026-04-07-main-run-integrity-audit.md)  `[2026-04-07]`
 - [🔪 Pre-Mortem Assumption Hunter](docs/features/2026-04-07-killjoy-premortem-cli.md)  `[2026-04-07]`
 - [status-reference-audit](docs/features/2026-04-06-main-status-reference-audit.md)  `[2026-04-06]`
@@ -118,6 +122,8 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-08-vibe-mention-guard.md
+│       ├── 2026-04-08-killjoy-risk-drift-scanner.md
 │       ├── 2026-04-08-env-doctor.md
 │       ├── 2026-04-08-commander-status-briefing.md
 │       ├── 2026-04-07-vibe-copy-tone-guard.md
