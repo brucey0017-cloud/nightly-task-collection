@@ -5,10 +5,11 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-08`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`36`
+- 功能页数量：`37`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-08
+- [Commander Status Briefing](docs/features/2026-04-08-commander-status-briefing.md)  `[监控观测属性]`
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[监控观测属性]`
 
 ### 2026-04-07
@@ -75,6 +76,7 @@
 
 ### 监控观测属性
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[2026-04-08]`
+- [Commander Status Briefing](docs/features/2026-04-08-commander-status-briefing.md)  `[2026-04-08]`
 - [status-jsonl-inspector](docs/features/2026-04-07-maker-status-jsonl-inspector.md)  `[2026-04-07]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[2026-04-07]`
 - [status_timeline](docs/features/2026-04-06-maker-status-timeline.md)  `[2026-04-06]`
@@ -117,6 +119,7 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-08-env-doctor.md
+│       ├── 2026-04-08-commander-status-briefing.md
 │       ├── 2026-04-07-vibe-copy-tone-guard.md
 │       ├── 2026-04-07-maker-status-jsonl-inspector.md
 │       ├── 2026-04-07-main-run-integrity-audit.md
