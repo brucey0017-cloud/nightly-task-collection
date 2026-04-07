@@ -3,11 +3,14 @@
 自动收录 nightly-tools 与 nightly-sidequests 产物，并维护双索引导航。
 
 ## 覆盖范围
-- 时间：`2026-04-01` ~ `2026-04-07`
+- 时间：`2026-04-01` ~ `2026-04-08`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`35`
+- 功能页数量：`36`
 
 ## 导航 A：按日期（新->旧）
+### 2026-04-08
+- [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[监控观测属性]`
+
 ### 2026-04-07
 - [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[工具属性]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[监控观测属性]`
@@ -71,6 +74,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[2026-04-08]`
 - [status-jsonl-inspector](docs/features/2026-04-07-maker-status-jsonl-inspector.md)  `[2026-04-07]`
 - [git-pulse](docs/features/2026-04-07-git-dirty.md)  `[2026-04-07]`
 - [status_timeline](docs/features/2026-04-06-maker-status-timeline.md)  `[2026-04-06]`
@@ -112,6 +116,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-08-env-doctor.md
 │       ├── 2026-04-07-vibe-copy-tone-guard.md
 │       ├── 2026-04-07-maker-status-jsonl-inspector.md
 │       ├── 2026-04-07-main-run-integrity-audit.md
