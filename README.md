@@ -5,13 +5,15 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-08`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`39`
+- 功能页数量：`41`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-08
 - [Commander Status Briefing](docs/features/2026-04-08-commander-status-briefing.md)  `[监控观测属性]`
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[监控观测属性]`
 - [🔪 Risk Drift Scanner](docs/features/2026-04-08-killjoy-risk-drift-scanner.md)  `[安全与风险属性]`
+- [sidequest-smoke-runner](docs/features/2026-04-08-main-sidequest-smoke-runner.md)  `[工具属性]`
+- [maker sidequest — status digest](docs/features/2026-04-08-maker-status-digest.md)  `[监控观测属性]`
 - [Mention Guard (Sidequest)](docs/features/2026-04-08-vibe-mention-guard.md)  `[设计与内容属性]`
 
 ### 2026-04-07
@@ -65,6 +67,7 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [sidequest-smoke-runner](docs/features/2026-04-08-main-sidequest-smoke-runner.md)  `[2026-04-08]`
 - [Commander RUN Dashboard](docs/features/2026-04-07-commander-run-dashboard.md)  `[2026-04-07]`
 - [API Response Validator](docs/features/2026-04-06-api-response-validator.md)  `[2026-04-06]`
 - [DupeSleuth](docs/features/2026-04-03-dupe-sleuth.md)  `[2026-04-03]`
@@ -78,6 +81,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [maker sidequest — status digest](docs/features/2026-04-08-maker-status-digest.md)  `[2026-04-08]`
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[2026-04-08]`
 - [Commander Status Briefing](docs/features/2026-04-08-commander-status-briefing.md)  `[2026-04-08]`
 - [status-jsonl-inspector](docs/features/2026-04-07-maker-status-jsonl-inspector.md)  `[2026-04-07]`
@@ -123,6 +127,8 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-08-vibe-mention-guard.md
+│       ├── 2026-04-08-maker-status-digest.md
+│       ├── 2026-04-08-main-sidequest-smoke-runner.md
 │       ├── 2026-04-08-killjoy-risk-drift-scanner.md
 │       ├── 2026-04-08-env-doctor.md
 │       ├── 2026-04-08-commander-status-briefing.md
