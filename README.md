@@ -5,13 +5,15 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-09`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`45`
+- 功能页数量：`47`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-09
 - [runpulse — nightly-lab run dashboard](docs/features/2026-04-09-commander-runpulse.md)  `[监控观测属性]`
 - [keyhound](docs/features/2026-04-09-keyhound.md)  `[工具属性]`
 - [🔪 assumption-miner](docs/features/2026-04-09-killjoy-assumption-miner.md)  `[安全与风险属性]`
+- [status-contract-check](docs/features/2026-04-09-main-status-contract-check.md)  `[安全与风险属性]`
+- [status-stage-lens](docs/features/2026-04-09-maker-status-stage-lens.md)  `[监控观测属性]`
 - [status-lens](docs/features/2026-04-09-vibe-status-lens.md)  `[设计与内容属性]`
 
 ### 2026-04-08
@@ -89,6 +91,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [status-stage-lens](docs/features/2026-04-09-maker-status-stage-lens.md)  `[2026-04-09]`
 - [runpulse — nightly-lab run dashboard](docs/features/2026-04-09-commander-runpulse.md)  `[2026-04-09]`
 - [maker sidequest — status digest](docs/features/2026-04-08-maker-status-digest.md)  `[2026-04-08]`
 - [env-doctor](docs/features/2026-04-08-env-doctor.md)  `[2026-04-08]`
@@ -111,6 +114,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [status-contract-check](docs/features/2026-04-09-main-status-contract-check.md)  `[2026-04-09]`
 - [🔪 assumption-miner](docs/features/2026-04-09-killjoy-assumption-miner.md)  `[2026-04-09]`
 - [🔪 Risk Drift Scanner](docs/features/2026-04-08-killjoy-risk-drift-scanner.md)  `[2026-04-08]`
 - [run-integrity-audit](docs/features/2026-04-07-main-run-integrity-audit.md)  `[2026-04-07]`
@@ -137,6 +141,8 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-09-vibe-status-lens.md
+│       ├── 2026-04-09-maker-status-stage-lens.md
+│       ├── 2026-04-09-main-status-contract-check.md
 │       ├── 2026-04-09-killjoy-assumption-miner.md
 │       ├── 2026-04-09-keyhound.md
 │       ├── 2026-04-09-commander-runpulse.md

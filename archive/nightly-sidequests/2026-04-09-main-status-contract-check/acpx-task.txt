@@ -1,0 +1,36 @@
+You are implementing a small self-contained nightly sidequest tool in /root/.openclaw/workspace.
+
+Goal: create a zero-dependency Python 3 CLI at /root/.openclaw/workspace/nightly-sidequests/2026-04-09-main-status-contract-check that audits the nightly-lab run contract using current-run.json and status.jsonl.
+
+Required output files:
+1) /root/.openclaw/workspace/nightly-sidequests/2026-04-09-main-status-contract-check/status_contract_check.py
+2) /root/.openclaw/workspace/nightly-sidequests/2026-04-09-main-status-contract-check/README.md
+
+Hard constraints:
+- Do NOT modify existing core files outside that artifact folder.
+- Self-contained, Python 3 stdlib only.
+- Keep scope small and useful tonight.
+- Focus on workflow visibility / contract validation.
+
+What the CLI should do:
+- Default input: /root/.openclaw/workspace/nightly-lab/current-run.json
+- Load current-run.json and its status_file.
+- Parse JSONL events from status.jsonl.
+- Validate sidequest lifecycle for agents from current_run.agents.sidequest and/or sidequest_reports keys.
+- For each agent, summarize whether required stages appear in order: start -> artifact -> done (or error).
+- Detect issues like missing stages, duplicate terminal stages, report path missing, artifact path missing, artifact path outside nightly_sidequests root, report/artifact mismatches against current-run data when inferable.
+- Support human-readable output and --json.
+- Optional filters: --agent AGENT, --strict (nonzero on warnings), --current-run PATH.
+- Exit code idea: 0 clean, 1 warnings, 2 hard input errors.
+- Include concise README with purpose, usage, exit codes, and one test command.
+
+Implementation guidance:
+- Be robust to unknown extra events.
+- Preserve simple CLI UX.
+- Add docstring and readable functions.
+- After writing files, run a basic smoke test command yourself and report the exact command and outcome.
+
+Return in your final response:
+- short summary
+- exact files written
+- exact smoke test command run and outcome
