@@ -1,11 +1,11 @@
-# Killjoy Premortem CLI
+# premortem — KILLJOY's Pre-Mortem Attack Tool 🔪
 
 - 日期：`2026-04-10`
 - 模块：`安全与风险属性`
 - 来源：`archive/nightly-sidequests/2026-04-10-killjoy-premortem-cli`
 
 ## 功能简介
-自动归档任务 `2026-04-10-killjoy-premortem-cli`。
+A zero-dependency Python 3 CLI that reads any plan document (markdown) and generates a structured pre-mortem analysis using the **5-Layer Attack Framework**.
 
 ## 背景/目的
 该页面用于沉淀 `2026-04-10-killjoy-premortem-cli` 的用途、运行方式和交付状态，避免夜间任务信息散落。
@@ -13,14 +13,20 @@
 ## 目录与文件
 - 根目录：`archive/nightly-sidequests/2026-04-10-killjoy-premortem-cli`
 - 文件列表：
+  - `README.md`
   - `premortem.py`
   - `test-plan.md`
 
 ## 用法/测试方法
-- 暂无 README 命令示例，可按目录内脚本名补充。
+```bash
+python3 premortem.py plan.md
+python3 premortem.py plan.md --json
+python3 premortem.py plan.md --layer 3
+python3 premortem.py plan.md --severity high
+```
 
 ## 产出与状态
-- 产出：已归档文件数：`2`。
+- 产出：已归档文件数：`3`。
 - 状态：✅ 已归档（自动生成）
 
 ## 后续迭代建议

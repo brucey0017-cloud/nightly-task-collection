@@ -5,12 +5,13 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-10`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`50`
+- 功能页数量：`51`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-10
 - [Commander RUN Summary](docs/features/2026-04-10-commander-run-summary.md)  `[工具属性]`
-- [Killjoy Premortem CLI](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [premortem — KILLJOY's Pre-Mortem Attack Tool 🔪](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [Sidequest: slot-guard visibility](docs/features/2026-04-10-maker-slot-guard-visibility.md)  `[工具属性]`
 - [Status Glance (Nightly Lab)](docs/features/2026-04-10-vibe-status-glance.md)  `[设计与内容属性]`
 
 ### 2026-04-09
@@ -80,6 +81,7 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [Sidequest: slot-guard visibility](docs/features/2026-04-10-maker-slot-guard-visibility.md)  `[2026-04-10]`
 - [Commander RUN Summary](docs/features/2026-04-10-commander-run-summary.md)  `[2026-04-10]`
 - [keyhound](docs/features/2026-04-09-keyhound.md)  `[2026-04-09]`
 - [sidequest-smoke-runner](docs/features/2026-04-08-main-sidequest-smoke-runner.md)  `[2026-04-08]`
@@ -121,7 +123,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
-- [Killjoy Premortem CLI](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[2026-04-10]`
+- [premortem — KILLJOY's Pre-Mortem Attack Tool 🔪](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[2026-04-10]`
 - [status-contract-check](docs/features/2026-04-09-main-status-contract-check.md)  `[2026-04-09]`
 - [🔪 assumption-miner](docs/features/2026-04-09-killjoy-assumption-miner.md)  `[2026-04-09]`
 - [🔪 Risk Drift Scanner](docs/features/2026-04-08-killjoy-risk-drift-scanner.md)  `[2026-04-08]`
@@ -149,6 +151,7 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-10-vibe-status-glance.md
+│       ├── 2026-04-10-maker-slot-guard-visibility.md
 │       ├── 2026-04-10-killjoy-premortem-cli.md
 │       ├── 2026-04-10-commander-run-summary.md
 │       ├── 2026-04-09-vibe-status-lens.md
