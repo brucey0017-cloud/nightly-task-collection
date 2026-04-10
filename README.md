@@ -5,11 +5,12 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-11`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`53`
+- 功能页数量：`54`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-11
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[安全与风险属性]`
 - [vibe-tone-lint](docs/features/2026-04-11-vibe-tone-lint.md)  `[设计与内容属性]`
 
 ### 2026-04-10
@@ -128,6 +129,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[2026-04-11]`
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[2026-04-11]`
 - [premortem — KILLJOY's Pre-Mortem Attack Tool 🔪](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[2026-04-10]`
 - [status-contract-check](docs/features/2026-04-09-main-status-contract-check.md)  `[2026-04-09]`
@@ -157,6 +159,7 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-11-vibe-tone-lint.md
+│       ├── 2026-04-11-maker-status-lag-scanner.md
 │       ├── 2026-04-11-killjoy-premortem-cli.md
 │       ├── 2026-04-10-vibe-status-glance.md
 │       ├── 2026-04-10-maker-slot-guard-visibility.md
