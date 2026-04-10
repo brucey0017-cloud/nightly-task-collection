@@ -3,11 +3,14 @@
 自动收录 nightly-tools 与 nightly-sidequests 产物，并维护双索引导航。
 
 ## 覆盖范围
-- 时间：`2026-04-01` ~ `2026-04-10`
+- 时间：`2026-04-01` ~ `2026-04-11`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`51`
+- 功能页数量：`52`
 
 ## 导航 A：按日期（新->旧）
+### 2026-04-11
+- [vibe-tone-lint](docs/features/2026-04-11-vibe-tone-lint.md)  `[设计与内容属性]`
+
 ### 2026-04-10
 - [Commander RUN Summary](docs/features/2026-04-10-commander-run-summary.md)  `[工具属性]`
 - [premortem — KILLJOY's Pre-Mortem Attack Tool 🔪](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[安全与风险属性]`
@@ -91,6 +94,7 @@
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
+- [vibe-tone-lint](docs/features/2026-04-11-vibe-tone-lint.md)  `[2026-04-11]`
 - [Status Glance (Nightly Lab)](docs/features/2026-04-10-vibe-status-glance.md)  `[2026-04-10]`
 - [status-lens](docs/features/2026-04-09-vibe-status-lens.md)  `[2026-04-09]`
 - [Mention Guard (Sidequest)](docs/features/2026-04-08-vibe-mention-guard.md)  `[2026-04-08]`
@@ -150,6 +154,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-11-vibe-tone-lint.md
 │       ├── 2026-04-10-vibe-status-glance.md
 │       ├── 2026-04-10-maker-slot-guard-visibility.md
 │       ├── 2026-04-10-killjoy-premortem-cli.md
