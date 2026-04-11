@@ -5,13 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-12`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`59`
+- 功能页数量：`60`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-12
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[监控观测属性]`
 - [json-delta](docs/features/2026-04-12-json-delta.md)  `[工具属性]`
 - [premortem-cli — KILLJOY's Pre-Mortem Stress Tester](docs/features/2026-04-12-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [sidequest-catalog](docs/features/2026-04-12-main-sidequest-catalog.md)  `[监控观测属性]`
 - [status-peek](docs/features/2026-04-12-maker-status-peek.md)  `[监控观测属性]`
 - [status-snapshot-cli](docs/features/2026-04-12-vibe-status-snapshot-cli.md)  `[设计与内容属性]`
 
@@ -116,6 +117,7 @@
 
 ### 监控观测属性
 - [status-peek](docs/features/2026-04-12-maker-status-peek.md)  `[2026-04-12]`
+- [sidequest-catalog](docs/features/2026-04-12-main-sidequest-catalog.md)  `[2026-04-12]`
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[2026-04-12]`
 - [status-stage-lens](docs/features/2026-04-09-maker-status-stage-lens.md)  `[2026-04-09]`
 - [runpulse — nightly-lab run dashboard](docs/features/2026-04-09-commander-runpulse.md)  `[2026-04-09]`
@@ -172,6 +174,7 @@ nightly-task-collection/
 │   └── features/
 │       ├── 2026-04-12-vibe-status-snapshot-cli.md
 │       ├── 2026-04-12-maker-status-peek.md
+│       ├── 2026-04-12-main-sidequest-catalog.md
 │       ├── 2026-04-12-killjoy-premortem-cli.md
 │       ├── 2026-04-12-json-delta.md
 │       ├── 2026-04-12-commander-workspace-healthcheck.md
