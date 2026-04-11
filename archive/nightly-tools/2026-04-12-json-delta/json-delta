@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""json-delta: semantic JSON diff for daily CLI use."""
+
+import argparse
+import json
+import sys
+
+
+def _path_obj(base: str, key: str) -> str:
+    return key if not base else f"{base}.{key}"
+
+
+def _path_idx(base: str, idx: int) -> str:
+    return f"[{idx}]" if not base else f"{base}[{idx}]"
+
+
+def _show_path(path: str) -> str:
+    return path if path else "<root>"
+
+
+def _fmt(value):
+    return json.dumps(value, ensure_ascii=False, sort_keys=True)
+
+
+def collect_diff(path, left, right, changed, added, removed):
+    if type(left) is not type(right):
+        changed.append((path, left, right))
+        return
+
+    if isinstance(left, dict):
+        left_keys = set(left.keys())
+        right_keys = set(right.keys())
+
+        for key in sorted(left_keys & right_keys):
+            collect_diff(_path_obj(path, key), left[key], right[key], changed, added, removed)
+
+        for key in sorted(right_keys - left_keys):
+            added.append((_path_obj(path, key), right[key]))
+
+        for key in sorted(left_keys - right_keys):
+            removed.append((_path_obj(path, key), left[key]))
+
+        return
+
+    if isinstance(left, list):
+        common = min(len(left), len(right))
+        for idx in range(common):
+            collect_diff(_path_idx(path, idx), left[idx], right[idx], changed, added, removed)
+
+        for idx in range(common, len(right)):
+            added.append((_path_idx(path, idx), right[idx]))
+
+        for idx in range(common, len(left)):
+            removed.append((_path_idx(path, idx), left[idx]))
+
+        return
+
+    if left != right:
+        changed.append((path, left, right))
+
+
+def load_json(source: str, allow_stdin: bool):
+    if source == "-":
+        if not allow_stdin:
+            raise ValueError("'-' is only allowed as the second positional argument (file_b).")
+        raw = sys.stdin.read()
+        return json.loads(raw)
+
+    with open(source, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def print_detail(changed, added, removed):
+    print(f"Changed ({len(changed)}):")
+    if changed:
+        for path, old, new in changed:
+            print(f"- {_show_path(path)}: {_fmt(old)} -> {_fmt(new)}")
+    else:
+        print("  (none)")
+
+    print(f"Added ({len(added)}):")
+    if added:
+        for path, value in added:
+            print(f"- {_show_path(path)}: {_fmt(value)}")
+    else:
+        print("  (none)")
+
+    print(f"Removed ({len(removed)}):")
+    if removed:
+        for path, value in removed:
+            print(f"- {_show_path(path)}: {_fmt(value)}")
+    else:
+        print("  (none)")
+
+
+def print_summary(changed, added, removed):
+    print(f"Changed: {len(changed)}")
+    print(f"Added: {len(added)}")
+    print(f"Removed: {len(removed)}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="json-delta",
+        description="Compare two JSON documents and print semantic differences.",
+    )
+    parser.add_argument("file_a", help="Baseline JSON file path")
+    parser.add_argument("file_b", help="Target JSON file path, or '-' to read from stdin")
+    parser.add_argument(
+        "--mode",
+        choices=("detail", "summary"),
+        default="detail",
+        help="detail: per-path diff (default); summary: counts only",
+    )
+    parser.add_argument(
+        "--exit-code",
+        action="store_true",
+        help="Return 1 when differences are found (0 if identical).",
+    )
+    args = parser.parse_args()
+
+    if args.file_a == "-":
+        print("Error: file_a cannot be '-'. Stdin is only supported for file_b.", file=sys.stderr)
+        return 2
+
+    try:
+        left = load_json(args.file_a, allow_stdin=False)
+        right = load_json(args.file_b, allow_stdin=True)
+    except FileNotFoundError as e:
+        print(f"Error: file not found: {e.filename}", file=sys.stderr)
+        return 2
+    except PermissionError as e:
+        print(f"Error: cannot read file: {e.filename}", file=sys.stderr)
+        return 2
+    except json.JSONDecodeError as e:
+        src = args.file_b if args.file_b == "-" and e.pos >= 0 else args.file_a
+        # If the first parse succeeded and second failed, source above may still be wrong;
+        # prefer message from exception to keep this lightweight.
+        print(f"Error: invalid JSON ({e.msg}) at line {e.lineno}, column {e.colno}", file=sys.stderr)
+        return 2
+    except ValueError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return 2
+    except OSError as e:
+        print(f"Error: I/O failure: {e}", file=sys.stderr)
+        return 2
+
+    changed = []
+    added = []
+    removed = []
+    collect_diff("", left, right, changed, added, removed)
+
+    total = len(changed) + len(added) + len(removed)
+    if total == 0:
+        print("No JSON differences found.")
+        return 0
+
+    print(f"Different: {total} changes")
+    if args.mode == "summary":
+        print_summary(changed, added, removed)
+    else:
+        print_detail(changed, added, removed)
+
+    if args.exit_code:
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -3,11 +3,14 @@
 自动收录 nightly-tools 与 nightly-sidequests 产物，并维护双索引导航。
 
 ## 覆盖范围
-- 时间：`2026-04-01` ~ `2026-04-11`
+- 时间：`2026-04-01` ~ `2026-04-12`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`54`
+- 功能页数量：`55`
 
 ## 导航 A：按日期（新->旧）
+### 2026-04-12
+- [json-delta](docs/features/2026-04-12-json-delta.md)  `[工具属性]`
+
 ### 2026-04-11
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[安全与风险属性]`
 - [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[安全与风险属性]`
@@ -86,6 +89,7 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [json-delta](docs/features/2026-04-12-json-delta.md)  `[2026-04-12]`
 - [Sidequest: slot-guard visibility](docs/features/2026-04-10-maker-slot-guard-visibility.md)  `[2026-04-10]`
 - [Commander RUN Summary](docs/features/2026-04-10-commander-run-summary.md)  `[2026-04-10]`
 - [keyhound](docs/features/2026-04-09-keyhound.md)  `[2026-04-09]`
@@ -158,6 +162,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-12-json-delta.md
 │       ├── 2026-04-11-vibe-tone-lint.md
 │       ├── 2026-04-11-maker-status-lag-scanner.md
 │       ├── 2026-04-11-killjoy-premortem-cli.md
