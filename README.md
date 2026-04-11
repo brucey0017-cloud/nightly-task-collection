@@ -5,10 +5,11 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-12`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`55`
+- 功能页数量：`56`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-12
+- [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[监控观测属性]`
 - [json-delta](docs/features/2026-04-12-json-delta.md)  `[工具属性]`
 
 ### 2026-04-11
@@ -110,6 +111,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[2026-04-12]`
 - [status-stage-lens](docs/features/2026-04-09-maker-status-stage-lens.md)  `[2026-04-09]`
 - [runpulse — nightly-lab run dashboard](docs/features/2026-04-09-commander-runpulse.md)  `[2026-04-09]`
 - [maker sidequest — status digest](docs/features/2026-04-08-maker-status-digest.md)  `[2026-04-08]`
@@ -163,6 +165,7 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-12-json-delta.md
+│       ├── 2026-04-12-commander-workspace-healthcheck.md
 │       ├── 2026-04-11-vibe-tone-lint.md
 │       ├── 2026-04-11-maker-status-lag-scanner.md
 │       ├── 2026-04-11-killjoy-premortem-cli.md
