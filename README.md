@@ -5,12 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-12`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`56`
+- 功能页数量：`58`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-12
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[监控观测属性]`
 - [json-delta](docs/features/2026-04-12-json-delta.md)  `[工具属性]`
+- [premortem-cli — KILLJOY's Pre-Mortem Stress Tester](docs/features/2026-04-12-killjoy-premortem-cli.md)  `[安全与风险属性]`
+- [status-snapshot-cli](docs/features/2026-04-12-vibe-status-snapshot-cli.md)  `[设计与内容属性]`
 
 ### 2026-04-11
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[安全与风险属性]`
@@ -101,6 +103,7 @@
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
+- [status-snapshot-cli](docs/features/2026-04-12-vibe-status-snapshot-cli.md)  `[2026-04-12]`
 - [vibe-tone-lint](docs/features/2026-04-11-vibe-tone-lint.md)  `[2026-04-11]`
 - [Status Glance (Nightly Lab)](docs/features/2026-04-10-vibe-status-glance.md)  `[2026-04-10]`
 - [status-lens](docs/features/2026-04-09-vibe-status-lens.md)  `[2026-04-09]`
@@ -135,6 +138,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [premortem-cli — KILLJOY's Pre-Mortem Stress Tester](docs/features/2026-04-12-killjoy-premortem-cli.md)  `[2026-04-12]`
 - [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[2026-04-11]`
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[2026-04-11]`
 - [premortem — KILLJOY's Pre-Mortem Attack Tool 🔪](docs/features/2026-04-10-killjoy-premortem-cli.md)  `[2026-04-10]`
@@ -164,6 +168,8 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-12-vibe-status-snapshot-cli.md
+│       ├── 2026-04-12-killjoy-premortem-cli.md
 │       ├── 2026-04-12-json-delta.md
 │       ├── 2026-04-12-commander-workspace-healthcheck.md
 │       ├── 2026-04-11-vibe-tone-lint.md
