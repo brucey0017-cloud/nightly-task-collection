@@ -5,11 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-13`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`61`
+- 功能页数量：`64`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-13
+- [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[监控观测属性]`
 - [jsonl-guard](docs/features/2026-04-13-jsonl-guard.md)  `[工具属性]`
+- [Killjoy Risk Vocab Scanner](docs/features/2026-04-13-killjoy-risk-vocab-scanner.md)  `[安全与风险属性]`
+- [Copy Tune Kit (VIBE Sidequest)](docs/features/2026-04-13-vibe-copy-tune-kit.md)  `[设计与内容属性]`
 
 ### 2026-04-12
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[监控观测属性]`
@@ -109,6 +112,7 @@
 - [Memory File Organizer](docs/features/2026-04-02-commander-memory-organizer.md)  `[2026-04-02]`
 
 ### 设计与内容属性
+- [Copy Tune Kit (VIBE Sidequest)](docs/features/2026-04-13-vibe-copy-tune-kit.md)  `[2026-04-13]`
 - [status-snapshot-cli](docs/features/2026-04-12-vibe-status-snapshot-cli.md)  `[2026-04-12]`
 - [vibe-tone-lint](docs/features/2026-04-11-vibe-tone-lint.md)  `[2026-04-11]`
 - [Status Glance (Nightly Lab)](docs/features/2026-04-10-vibe-status-glance.md)  `[2026-04-10]`
@@ -120,6 +124,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[2026-04-13]`
 - [status-peek](docs/features/2026-04-12-maker-status-peek.md)  `[2026-04-12]`
 - [sidequest-catalog](docs/features/2026-04-12-main-sidequest-catalog.md)  `[2026-04-12]`
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[2026-04-12]`
@@ -146,6 +151,7 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [Killjoy Risk Vocab Scanner](docs/features/2026-04-13-killjoy-risk-vocab-scanner.md)  `[2026-04-13]`
 - [premortem-cli — KILLJOY's Pre-Mortem Stress Tester](docs/features/2026-04-12-killjoy-premortem-cli.md)  `[2026-04-12]`
 - [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[2026-04-11]`
 - [Killjoy Premortem CLI](docs/features/2026-04-11-killjoy-premortem-cli.md)  `[2026-04-11]`
@@ -176,7 +182,10 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-13-vibe-copy-tune-kit.md
+│       ├── 2026-04-13-killjoy-risk-vocab-scanner.md
 │       ├── 2026-04-13-jsonl-guard.md
+│       ├── 2026-04-13-commander-nightly-digest.md
 │       ├── 2026-04-12-vibe-status-snapshot-cli.md
 │       ├── 2026-04-12-maker-status-peek.md
 │       ├── 2026-04-12-main-sidequest-catalog.md
