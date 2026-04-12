@@ -3,11 +3,14 @@
 自动收录 nightly-tools 与 nightly-sidequests 产物，并维护双索引导航。
 
 ## 覆盖范围
-- 时间：`2026-04-01` ~ `2026-04-12`
+- 时间：`2026-04-01` ~ `2026-04-13`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`60`
+- 功能页数量：`61`
 
 ## 导航 A：按日期（新->旧）
+### 2026-04-13
+- [jsonl-guard](docs/features/2026-04-13-jsonl-guard.md)  `[工具属性]`
+
 ### 2026-04-12
 - [Commander Workspace Healthcheck](docs/features/2026-04-12-commander-workspace-healthcheck.md)  `[监控观测属性]`
 - [json-delta](docs/features/2026-04-12-json-delta.md)  `[工具属性]`
@@ -94,6 +97,7 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [jsonl-guard](docs/features/2026-04-13-jsonl-guard.md)  `[2026-04-13]`
 - [json-delta](docs/features/2026-04-12-json-delta.md)  `[2026-04-12]`
 - [Sidequest: slot-guard visibility](docs/features/2026-04-10-maker-slot-guard-visibility.md)  `[2026-04-10]`
 - [Commander RUN Summary](docs/features/2026-04-10-commander-run-summary.md)  `[2026-04-10]`
@@ -172,6 +176,7 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-13-jsonl-guard.md
 │       ├── 2026-04-12-vibe-status-snapshot-cli.md
 │       ├── 2026-04-12-maker-status-peek.md
 │       ├── 2026-04-12-main-sidequest-catalog.md
