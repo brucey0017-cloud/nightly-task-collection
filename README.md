@@ -5,13 +5,14 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-13`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`64`
+- 功能页数量：`65`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-13
 - [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[监控观测属性]`
 - [jsonl-guard](docs/features/2026-04-13-jsonl-guard.md)  `[工具属性]`
 - [Killjoy Risk Vocab Scanner](docs/features/2026-04-13-killjoy-risk-vocab-scanner.md)  `[安全与风险属性]`
+- [Run Lag Radar](docs/features/2026-04-13-maker-run-lag-radar.md)  `[流程自动化属性]`
 - [Copy Tune Kit (VIBE Sidequest)](docs/features/2026-04-13-vibe-copy-tune-kit.md)  `[设计与内容属性]`
 
 ### 2026-04-12
@@ -170,6 +171,7 @@
 - [Killjoy Config Vuln Scanner](docs/features/2026-04-01-killjoy-config-vuln-scanner.md)  `[2026-04-01]`
 
 ### 流程自动化属性
+- [Run Lag Radar](docs/features/2026-04-13-maker-run-lag-radar.md)  `[2026-04-13]`
 - [Commander Workflow Tracker](docs/features/2026-04-04-commander-workflow-tracker.md)  `[2026-04-04]`
 - [API Tester](docs/features/2026-04-03-commander-api-tester.md)  `[2026-04-03]`
 
@@ -183,6 +185,7 @@ nightly-task-collection/
 ├── docs/
 │   └── features/
 │       ├── 2026-04-13-vibe-copy-tune-kit.md
+│       ├── 2026-04-13-maker-run-lag-radar.md
 │       ├── 2026-04-13-killjoy-risk-vocab-scanner.md
 │       ├── 2026-04-13-jsonl-guard.md
 │       ├── 2026-04-13-commander-nightly-digest.md
