@@ -5,11 +5,13 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-14`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`67`
+- 功能页数量：`69`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-14
+- [Commander Sidequest Value Audit](docs/features/2026-04-14-commander-sidequest-value-audit.md)  `[安全与风险属性]`
 - [disk-triage](docs/features/2026-04-14-disk-triage.md)  `[工具属性]`
+- [Killjoy Commit BS Lint](docs/features/2026-04-14-killjoy-commit-bs-lint.md)  `[安全与风险属性]`
 
 ### 2026-04-13
 - [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[监控观测属性]`
@@ -158,6 +160,8 @@
 - [log-scout](docs/features/2026-04-01-log-scout.md)  `[2026-04-01]`
 
 ### 安全与风险属性
+- [Killjoy Commit BS Lint](docs/features/2026-04-14-killjoy-commit-bs-lint.md)  `[2026-04-14]`
+- [Commander Sidequest Value Audit](docs/features/2026-04-14-commander-sidequest-value-audit.md)  `[2026-04-14]`
 - [Killjoy Risk Vocab Scanner](docs/features/2026-04-13-killjoy-risk-vocab-scanner.md)  `[2026-04-13]`
 - [premortem-cli — KILLJOY's Pre-Mortem Stress Tester](docs/features/2026-04-12-killjoy-premortem-cli.md)  `[2026-04-12]`
 - [status-lag-scanner](docs/features/2026-04-11-maker-status-lag-scanner.md)  `[2026-04-11]`
@@ -190,7 +194,9 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-14-killjoy-commit-bs-lint.md
 │       ├── 2026-04-14-disk-triage.md
+│       ├── 2026-04-14-commander-sidequest-value-audit.md
 │       ├── 2026-04-13-vibe-copy-tune-kit.md
 │       ├── 2026-04-13-maker-run-lag-radar.md
 │       ├── 2026-04-13-main-lab-dashboard.md
