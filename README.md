@@ -5,13 +5,15 @@
 ## 覆盖范围
 - 时间：`2026-04-01` ~ `2026-04-14`
 - 来源：`nightly-tools` + `nightly-sidequests`
-- 功能页数量：`69`
+- 功能页数量：`71`
 
 ## 导航 A：按日期（新->旧）
 ### 2026-04-14
 - [Commander Sidequest Value Audit](docs/features/2026-04-14-commander-sidequest-value-audit.md)  `[安全与风险属性]`
 - [disk-triage](docs/features/2026-04-14-disk-triage.md)  `[工具属性]`
 - [Killjoy Commit BS Lint](docs/features/2026-04-14-killjoy-commit-bs-lint.md)  `[安全与风险属性]`
+- [Main Nightly Summary](docs/features/2026-04-14-main-nightly-summary.md)  `[工具属性]`
+- [status-flow-check](docs/features/2026-04-14-maker-status-flow-check.md)  `[监控观测属性]`
 
 ### 2026-04-13
 - [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[监控观测属性]`
@@ -107,6 +109,7 @@
 
 ## 导航 B：按功能模块
 ### 工具属性
+- [Main Nightly Summary](docs/features/2026-04-14-main-nightly-summary.md)  `[2026-04-14]`
 - [disk-triage](docs/features/2026-04-14-disk-triage.md)  `[2026-04-14]`
 - [Main LAB Dashboard](docs/features/2026-04-13-main-lab-dashboard.md)  `[2026-04-13]`
 - [jsonl-guard](docs/features/2026-04-13-jsonl-guard.md)  `[2026-04-13]`
@@ -133,6 +136,7 @@
 - [Tone & Rhythm Text Analyzer](docs/features/2026-04-01-vibe-tone-analyzer.md)  `[2026-04-01]`
 
 ### 监控观测属性
+- [status-flow-check](docs/features/2026-04-14-maker-status-flow-check.md)  `[2026-04-14]`
 - [Commander Nightly Digest](docs/features/2026-04-13-commander-nightly-digest.md)  `[2026-04-13]`
 - [status-peek](docs/features/2026-04-12-maker-status-peek.md)  `[2026-04-12]`
 - [sidequest-catalog](docs/features/2026-04-12-main-sidequest-catalog.md)  `[2026-04-12]`
@@ -194,6 +198,8 @@ nightly-task-collection/
 │   └── build_index.py
 ├── docs/
 │   └── features/
+│       ├── 2026-04-14-maker-status-flow-check.md
+│       ├── 2026-04-14-main-nightly-summary.md
 │       ├── 2026-04-14-killjoy-commit-bs-lint.md
 │       ├── 2026-04-14-disk-triage.md
 │       ├── 2026-04-14-commander-sidequest-value-audit.md
